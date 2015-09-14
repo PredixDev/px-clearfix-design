@@ -2,8 +2,7 @@
   "name": "px-clearfix-design",
   "version": "0.1.1",
   "authors": [
-    "General Electric",
-    "Harry Roberts <harry@csswizardry.com>"
+    "General Electric"
   ],
   "description": "Simple clearfix helper for Predix Experience",
   "main": "_trumps.clearfix.scss",
@@ -13,7 +12,7 @@
     "clearfix"
   ],
   "license": "Apache 2",
-  "homepage": "git://github.sw.ge.com/PXd/px-clearfix-design.git",
+  "homepage": "https://github.sw.ge.com/PXd/px-clearfix-design.git",
   "private": true,
   "ignore": [
     "**/.*",
@@ -23,6 +22,6 @@
     "tests"
   ],
   "dependencies": {
-    "px-functions-design": "git://github.sw.ge.com/PXd/px-functions-design.git#~0.1.0"
+    "px-functions-design": "https://github.sw.ge.com/PXd/px-functions-design.git#~0.1.0"
   }
 }
