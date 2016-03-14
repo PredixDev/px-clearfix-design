@@ -1,6 +1,6 @@
 {
   "name": "px-clearfix-design",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "authors": [
     "General Electric"
   ],
@@ -13,7 +13,7 @@
   ],
   "license": "Apache 2",
   "homepage": "https://github.com/PredixDev/px-clearfix-design.git",
-  "private": true,
+  "private": false,
   "ignore": [
     "**/.*",
     "node_modules",
