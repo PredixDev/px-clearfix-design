@@ -1,11 +1,11 @@
 # Clearfix
 
-The Predix Experience Clearfix module is a minimal clearfix helper class. This module is a fork of the [inuitcss 
+The Predix UI Clearfix module is a minimal clearfix helper class. This module is a fork of the [inuitcss
 Clearfix module](https://github.com/inuitcss/trumps.clearfix).
 
 ## Dependency
 
-Px's Clearfix module depends on one other Px module:
+Predix UI's Clearfix module depends on one other Px module:
 
 * [px-functions-design](https://github.com/PredixDev/px-functions-design)
 
@@ -13,13 +13,11 @@ Px's Clearfix module depends on one other Px module:
 
 Install this module and its dependencies using bower:
 
-    bower install --save https://github.com/PredixDev/px-clearfix-design.git
+    bower install --save px-clearfix-design
 
 Once installed, `@import` into your project's Sass file in its Objects layer:
 
     @import "../px-clearfix-design/trumps.clearfix";
-
-See [px-getting-started](https://github.com/PredixDev/px-getting-started#a-note-about-relative-import-paths) for an explanation of the `../`
 
 ## Import once
 
