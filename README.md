@@ -18,7 +18,7 @@ There are no flags to set before importing this module in your project Sass file
 
 Import the module by placing this code into the `Trumps` layer of your project Sass file:
 
-     @import "px-clearfix-design/_trumps.clearfix.scss";
+     @import 'px-clearfix-design/_trumps.clearfix.scss';
 
 The module is wrapped the following `@if` statement, and will only be included once when your Sass is compiled into CSS.
 
