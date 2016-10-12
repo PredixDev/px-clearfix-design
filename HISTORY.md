@@ -1,3 +1,7 @@
+v0.1.7
+==============================
+* Move to latest version of dependencies.
+
 v0.1.6
 ==============================
 * updated oss notice and readme page.

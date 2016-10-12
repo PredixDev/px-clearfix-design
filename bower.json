@@ -1,6 +1,6 @@
 {
   "name": "px-clearfix-design",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "authors": [
     "General Electric"
   ],
@@ -21,6 +21,6 @@
     "tests"
   ],
   "dependencies": {
-    "px-functions-design": "https://github.com/PredixDev/px-functions-design.git#~0.1.0"
+    "px-functions-design": "~0.3.3"
   }
 }
