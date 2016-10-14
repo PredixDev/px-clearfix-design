@@ -1,30 +1,42 @@
-# Clearfix
+# px-clearfix-design
 
-The Predix UI Clearfix module is a minimal clearfix helper class. This module is a fork of the [inuitcss
-Clearfix module](https://github.com/inuitcss/trumps.clearfix).
-
-## Dependency
-
-Predix UI's Clearfix module depends on one other Px module:
-
-* [px-functions-design](https://github.com/PredixDev/px-functions-design)
+The clearfix module provides a minimal clearfix helper class to help clear floats. This module is a fork of the [inuitcss clearfix module](https://github.com/inuitcss/trumps.clearfix).
 
 ## Installation
 
-Install this module and its dependencies using bower:
+Install the module and any dependencies using Bower. Run this task from the command line inside your project folder:
 
-    bower install --save px-clearfix-design
+```
+bower install --save px-clearfix-design
+```
 
-Once installed, `@import` into your project's Sass file in its Objects layer:
+## Enable and Import
 
-    @import "../px-clearfix-design/trumps.clearfix";
+### Enable Flags
 
-## Import once
+There are no flags to set before importing this module in your project Sass file.
 
-All rulesets are wrapped in the following `@if` statement:
+### Import Sass
 
-    @if import-once('trumps.clearfix') { ... }
+Import the module by placing this code into the `Trumps` layer of your project Sass file:
+```
+@import 'px-clearfix-design/_trumps.clearfix.scss';
+```
+The module is wrapped the following `@if` statement, and will only be included once when your Sass is compiled into CSS.
+```
+@if import-once('trumps.clearfix') { ... }
+```
+## Usage
 
-#Usage
+Avoid using the `.clearfix` class directly in your markup. Instead, try to `@extend` the clearfix module inside the parent class that will wrap around floated elements. For example:
+```
+.row {
+  @extend %clearfix;
+  ...
+}
+```
+## Dependencies
 
-`@extend` the clearfix class with Sass to avoid the `clearfix` class appearing over and over in your markup.
+This module depends on the following Predix UI CSS modules:
+
+* [px-functions-design](https://github.com/PredixDev/px-functions-design)

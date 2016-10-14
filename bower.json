@@ -1,10 +1,10 @@
 {
   "name": "px-clearfix-design",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "authors": [
     "General Electric"
   ],
-  "description": "Simple clearfix helper for Predix Experience",
+  "description": "Minimal clearfix helper for Predix UI",
   "main": "_trumps.clearfix.scss",
   "keywords": [
     "px",
