@@ -1,0 +1,22 @@
+sudo: required
+dist: trusty
+language: node_js
+node_js:
+- stable
+branches:
+  only:
+  - master
+before_script:
+- npm install bower
+- export PATH=$PWD/node_modules/.bin:$PATH
+- bower install
+script:
+- cd $TRAVIS_BUILD_DIR/scripts
+- chmod 755 ghp.sh
+- "./ghp.sh"
+before_install:
+- if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then openssl aes-256-cbc -k "$password"
+  -in id_rsa.enc -out deploy_key -d; fi
+env:
+  global:
+  - secure: jzYOGZ/3SAjwDJ+Qw4oJvo8jrd4vE6uRbibVIMjl8y++rXR2tWjxK3G+tS77YuuKBjuKX8D/h7TlAnbwgQfvVzFkyFnigYOWdXEtx34rxfNTtTBeEQQVtd2iKGhzQ/CCF6a/AcLamDIPakVW8oYWZWPcuXLqk2RAFWDapgV9vN3WBUxlK9YUKfrkGz1UXN7+28HRjG4LEB4XOT2hYZMV8b+90PSPEIDEIIPi1ohM8dfRUm7IPnbH5iI82mZHnk0mcXp5Ti4wPnlXZ8uTQatS4HojJo1QgohAMZVzFkWHsMpOvoDnO1RUZdjONL7v/zYSxcXfLoEG41iwv0EhXYBkP7IseBNr3woWjWmAUkQTIIg+6QhMctr2XTicWWYwGcaoj+1X7uz7nq8KFKRjZm2FR04qTvXjkOLuuD3LA3YAh5nLOAaTOBEPtIKEzD24hzm2Mz+v3aNj1XluEyRdOXKB6dUbMvyTRBV5YKq9Vd7SeR3btW4p69raa0r7/YL8zB9Rj2epybmzpT1NGJzTgUC7uhz+8ZBU/UQa0/KLjEfIJhkR51AEqKTQm10dJ3zFihjbdsxbJ/lc1dmYgCHbKBoApJuYOoymBKmMzORCi4klxxkYojqpyCV5toMoDG9+dhMEdsUk2GsQe2QlyrkXyxlw7ygC7ggeCDYYORN2cnfPzY0=
