@@ -1,3 +1,7 @@
+v0.1.10
+==============================
+* Updated dependencies
+
 v0.1.9
 ==============================
 * Add demo documentation
