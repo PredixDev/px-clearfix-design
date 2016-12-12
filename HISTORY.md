@@ -1,3 +1,7 @@
+v0.1.16
+==================
+* Updated dependencies
+
 v0.1.15
 ==================
 * Move to style modules to demos
