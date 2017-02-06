@@ -1,6 +1,6 @@
 {
     "name": "px-clearfix-design",
-    "version": "0.1.17",
+    "version": "0.1.18",
     "description": "The clearfix module provides a minimal clearfix helper class to help clear floats.",
     "author": "General Electric",
     "private": false,
