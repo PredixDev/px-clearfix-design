@@ -1,3 +1,7 @@
+v1.0.1
+==================
+* runtime theming in demo
+
 v1.0.0
 ==================
 * Bump to pick up design repo dependencies
